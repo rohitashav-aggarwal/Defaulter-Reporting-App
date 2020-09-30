@@ -1,0 +1,58 @@
+Fragments
+1) A fragment is a controller object that an activity can deputize to perform tasks. A fragment managing a UI is known as a UI fragment.
+2) Two types of fragments: native fragments or support fragments
+3) In this project, support fragments are used because they are superior and they are built into a library that you include in your application.
+4) UUID is a Java utility class included in the Android framework. It provides an easy way to generate
+   universally unique ID values.
+5) One critical difference between the fragment lifecycle and the activity lifecycle is that fragment
+   lifecycle methods are called by the hosting activity, not the OS. The OS knows nothing about the
+   fragments that an activity is using to manage things. Fragments are the activity’s internal business.
+6) 2 ways to host fragments in activity: to layout or in code
+   We will add fragment to the code to achieve real UI flexibility.
+7) Activity class includes a piece called FragmentManager. It is responsible for managing your fragments and adding their views to the activity's view hierarchy.
+
+RecyclerView
+1) A singleton is a class that allows only one instance of itself to be created.
+   A singleton exists as long as the application stays in memory.
+2) To create a singleton, you create a class with a private constructor and a get() method. If the instance
+   already exists, then get() simply returns the instance. If the instance does not exist yet, then get() will
+   call the constructor to create it.
+3) RecyclerView is a subclass of ViewGroup. It displays a list of child View objects, one for each item in
+   your list of items. Depending on the complexity of what you need to display, these child Views can be
+   complex or very simple.
+4) RecyclerView reuses it rather than throwing it away. In short, it
+   lives up to its name: It recycles views over and over.
+5) It works with two classes, an adapter subclass and a ViewHolder subclass.
+6) ViewHolder class holds on to a View.
+7) An adapter is a controller object that sits between the RecyclerView and the data set that
+   the RecyclerView should display.
+   The adapter is responsible for:
+   • creating the necessary ViewHolders
+   • binding ViewHolders to data from the model layer
+
+Layouts and Widgets
+1) Using Graphical layout tool instead of xml
+2) All attributes that begin with layout_ are known as layout
+   parameters. Unlike other attributes, layout parameters are directions to that widget’s parent, not the
+   widget itself. They tell the parent layout how to arrange the child element within itself.
+3) A style is an XML resource that contains attributes that describe how a widget should look and behave.
+
+Fragment Arguments
+1) In order to maintain the encapsulation of your fragment, we can use arguments bundle instead of linking it
+   to its hosting activity.
+2) Every fragment instance can have a Bundle object attached to it. This bundle contains key-value pairs
+   that work just like the intent extras of an Activity. Each pair is known as an argument.
+3) To create fragment arguments, you first create a Bundle object. Next, you use type-specific “put”
+   methods of Bundle (similar to those of Intent) to add arguments to the bundle:
+   Bundle args = new Bundle();
+   args.putSerializable(ARG_MY_OBJECT, myObject);
+   args.putInt(ARG_MY_INT, myInt);
+   args.putCharSequence(ARG_MY_STRING, myString);
+
+ViewPager
+1) A ViewPager is like a RecyclerView in some ways. A RecyclerView requires an Adapter to provide
+   views. A ViewPager requires a PagerAdapter.
+   However, the conversation between ViewPager and PagerAdapter is much more involved than the
+   conversation between RecyclerView and Adapter. Luckily, you can use FragmentStatePagerAdapter,
+   a subclass of PagerAdapter, to take care of many of the details.
+2)
