@@ -1,10 +1,12 @@
-package com.example.defaulterreporting;
+package com.example.DefaulterReporting;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
+import com.example.defaulterReporting.R;
 
 public abstract class SingleFragmentActivity extends AppCompatActivity {
 

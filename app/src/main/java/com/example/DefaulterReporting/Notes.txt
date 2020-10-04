@@ -55,4 +55,9 @@ ViewPager
    However, the conversation between ViewPager and PagerAdapter is much more involved than the
    conversation between RecyclerView and Adapter. Luckily, you can use FragmentStatePagerAdapter,
    a subclass of PagerAdapter, to take care of many of the details.
-2)
+
+Dialog
+1) Having a dialog managed by the FragmentManager gives you more options for presenting the dialog.
+2) if the device is rotated. If the AlertDialog is wrapped in a
+   fragment, then the dialog will be re-created and put back onscreen after rotation.
+3)

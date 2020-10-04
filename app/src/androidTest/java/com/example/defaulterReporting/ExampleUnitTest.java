@@ -1,4 +1,4 @@
-package com.example.defaulterreporting;
+package com.example.defaulterReporting;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.defaulterreporting;
+package com.example.DefaulterReporting;
 
 import java.util.Date;
 import java.util.UUID;
