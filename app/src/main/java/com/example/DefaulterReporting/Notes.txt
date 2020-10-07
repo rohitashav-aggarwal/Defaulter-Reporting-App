@@ -66,4 +66,9 @@ Dialog
    information from the Calendar.
 
 The Toolbar
-1)
+1) adding a menu item in fragments or activity
+2) Hierarchical navigation by adding a parentActivityName attribute in manifest file.
+3) navigating with the Back button and navigating with the Up button perform the
+   same task. Even though they accomplish the same result, behind the scenes they are doing
+   very different things. This is important because, depending on the application, navigating up may pop
+   the user back multiple activities in the back stack.

@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.DefaulterReporting.CrimePagerActivity">
-
+        <activity android:name="com.example.DefaulterReporting.CrimePagerActivity"
+            android:parentActivityName="com.example.DefaulterReporting.CrimeListActivity">
         </activity>
         <activity android:name="com.example.DefaulterReporting.CrimeListActivity">
             <intent-filter>
